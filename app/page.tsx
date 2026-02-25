@@ -52,21 +52,21 @@ export default function HomePage() {
   const paginatedLinks = linksData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-            <span className="font-display font-bold text-xl tracking-tight text-slate-900">Sarkari Link Hub</span>
+      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-emerald-200 group-hover:scale-110 transition-transform">S</div>
+            <span className="font-display font-bold text-2xl tracking-tight text-slate-900">Sarkari Link Hub</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium text-emerald-600">Home</Link>
+          <nav className="hidden md:flex items-center gap-8">
+            <Link href="/" className="text-sm font-bold text-emerald-600">Home</Link>
             {categories.slice(0, 4).map(cat => (
-              <span key={cat} className="text-sm font-medium text-slate-600 hover:text-emerald-600 cursor-pointer transition-colors">{cat}</span>
+              <span key={cat} className="text-sm font-bold text-slate-500 hover:text-emerald-600 cursor-pointer transition-colors">{cat}</span>
             ))}
           </nav>
-          <button className="md:hidden p-2 text-slate-600">
+          <button className="md:hidden p-2.5 bg-slate-50 rounded-xl text-slate-600">
             <Menu size={24} />
           </button>
         </div>
@@ -74,10 +74,12 @@ export default function HomePage() {
 
       <main className="flex-grow min-h-[70vh]">
         {/* Hero & Search */}
-        <section className="bg-emerald-700 py-16 md:py-24 px-4 relative overflow-hidden z-20">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+        <section className="bg-emerald-700 py-16 md:py-24 px-4 relative z-20">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+              <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+            </div>
           </div>
           
           <div className="max-w-3xl mx-auto text-center relative z-10">
@@ -241,38 +243,47 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-12 px-4">
+      <footer className="bg-slate-950 text-slate-400 py-20 px-4 border-t border-slate-900">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
             <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-                <span className="font-display font-bold text-xl tracking-tight text-white">Sarkari Link Hub</span>
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                <span className="font-display font-bold text-2xl tracking-tight text-white">Sarkari Link Hub</span>
               </div>
-              <p className="max-w-sm mb-6">
+              <p className="max-w-sm mb-8 leading-relaxed text-slate-400">
                 The most reliable directory for official government service links. We help you find the right portal without the confusion of ads or third-party blogs.
               </p>
+              <div className="flex gap-4">
+                {/* Social placeholders if needed */}
+                <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-emerald-600 hover:border-emerald-500 transition-all cursor-pointer">
+                  <span className="text-white text-xs font-bold">FB</span>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-emerald-600 hover:border-emerald-500 transition-all cursor-pointer">
+                  <span className="text-white text-xs font-bold">TW</span>
+                </div>
+              </div>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-6">Quick Links</h4>
-              <ul className="space-y-4 text-sm">
-                <li><Link href="/" className="hover:text-emerald-400 transition-colors">Home</Link></li>
-                <li><Link href="#" className="hover:text-emerald-400 transition-colors">About Us</Link></li>
-                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link></li>
-                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Disclaimer</Link></li>
+              <h4 className="text-white font-bold text-lg mb-8">Quick Links</h4>
+              <ul className="space-y-4 text-sm font-medium">
+                <li><Link href="/" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Home</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> About Us</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Privacy Policy</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Disclaimer</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-6">Top Categories</h4>
-              <ul className="space-y-4 text-sm">
+              <h4 className="text-white font-bold text-lg mb-8">Top Categories</h4>
+              <ul className="space-y-4 text-sm font-medium">
                 {categories.slice(0, 4).map(cat => (
-                  <li key={cat}><Link href="#" className="hover:text-emerald-400 transition-colors">{cat}</Link></li>
+                  <li key={cat}><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> {cat}</Link></li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-slate-800 text-center text-xs">
-            <p>&copy; {new Date().getFullYear()} Sarkari Link Hub. All rights reserved. This is an independent directory and not affiliated with any government entity.</p>
+          <div className="pt-10 border-t border-slate-900 text-center text-xs tracking-widest uppercase text-slate-500">
+            <p>&copy; {new Date().getFullYear()} Sarkari Link Hub. All rights reserved. Not affiliated with any government entity.</p>
           </div>
         </div>
       </footer>
