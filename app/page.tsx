@@ -34,6 +34,10 @@ export default function HomePage() {
     return [];
   }, [debouncedQuery]);
 
+  const handleLinkClick = (slug: string) => {
+    return `/links/${slug}.html`;
+  };
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -126,7 +130,7 @@ export default function HomePage() {
                     {results.map((link) => (
                       <Link 
                         key={link.id} 
-                        href={`/links/${link.slug}`}
+                        href={`/links/${link.slug}.html`}
                         className="flex items-center justify-between p-4 hover:bg-emerald-50 transition-colors border-b border-slate-50 last:border-0"
                       >
                         <div>
@@ -175,11 +179,11 @@ export default function HomePage() {
                   <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full uppercase tracking-wider">
                     {link.category}
                   </span>
-                  <Link href={`/links/${link.slug}`} className="text-slate-300 group-hover:text-emerald-500 transition-colors">
+                  <Link href={`/links/${link.slug}.html`} className="text-slate-300 group-hover:text-emerald-500 transition-colors">
                     <ArrowRight size={20} />
                   </Link>
                 </div>
-                <Link href={`/links/${link.slug}`}>
+                <Link href={`/links/${link.slug}.html`}>
                   <h3 className="font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">
                     {link.title}
                   </h3>
@@ -189,7 +193,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center gap-3">
                   <Link 
-                    href={`/links/${link.slug}`}
+                    href={`/links/${link.slug}.html`}
                     className="flex-grow text-center py-2.5 bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold rounded-xl transition-colors text-sm"
                   >
                     View Details
