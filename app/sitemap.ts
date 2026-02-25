@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.APP_URL || 'https://sarkarilinkhub.com';
   
   const links = linksData.map((link) => ({
-    url: `${baseUrl}/links/${link.slug}`,
+    url: `${baseUrl}/links/${link.slug}.html`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
