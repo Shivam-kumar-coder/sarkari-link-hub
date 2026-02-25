@@ -152,7 +152,7 @@ export default function HomePage() {
         {/* Categories Slider */}
         <section className="py-8 bg-white border-b border-slate-100 overflow-hidden z-10 relative">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-center gap-4 overflow-x-auto pb-2 scrollbar-hide no-scrollbar flex-nowrap">
+            <div className="flex items-center gap-4 overflow-x-auto pb-2 no-scrollbar flex-nowrap">
               <button className="whitespace-nowrap px-6 py-2 rounded-full bg-emerald-600 text-white font-medium shadow-md shadow-emerald-200">All Services</button>
               {categories.map(cat => (
                 <button key={cat} className="whitespace-nowrap px-6 py-2 rounded-full bg-slate-100 text-slate-600 font-medium hover:bg-slate-200 transition-colors">
@@ -174,7 +174,7 @@ export default function HomePage() {
             {paginatedLinks.map((link) => (
               <motion.div 
                 key={link.id}
-                whileHover={{ y: -6, shadow: "0 20px 25px -5px rgb(16 185 129 / 0.05), 0 8px 10px -6px rgb(16 185 129 / 0.05)" }}
+                whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(16 185 129 / 0.05), 0 8px 10px -6px rgb(16 185 129 / 0.05)" }}
                 className="bg-white/70 backdrop-blur-md rounded-[2rem] p-8 border border-slate-200/60 shadow-sm hover:border-emerald-200/50 transition-all duration-300 group relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:bg-emerald-500/10 transition-colors"></div>
