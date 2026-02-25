@@ -72,9 +72,9 @@ export default function HomePage() {
         </div>
       </header>
 
-      <main className="flex-grow">
+      <main className="flex-grow min-h-[70vh]">
         {/* Hero & Search */}
-        <section className="bg-emerald-700 py-16 md:py-24 px-4 relative overflow-hidden">
+        <section className="bg-emerald-700 py-16 md:py-24 px-4 relative overflow-hidden z-20">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl"></div>
@@ -148,9 +148,9 @@ export default function HomePage() {
         </section>
 
         {/* Categories Slider */}
-        <section className="py-8 bg-white border-b border-slate-100 overflow-hidden">
+        <section className="py-8 bg-white border-b border-slate-100 overflow-hidden z-10 relative">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-center gap-4 overflow-x-auto pb-2 scrollbar-hide no-scrollbar">
+            <div className="flex items-center gap-4 overflow-x-auto pb-2 scrollbar-hide no-scrollbar flex-nowrap">
               <button className="whitespace-nowrap px-6 py-2 rounded-full bg-emerald-600 text-white font-medium shadow-md shadow-emerald-200">All Services</button>
               {categories.map(cat => (
                 <button key={cat} className="whitespace-nowrap px-6 py-2 rounded-full bg-slate-100 text-slate-600 font-medium hover:bg-slate-200 transition-colors">
@@ -168,44 +168,49 @@ export default function HomePage() {
             <p className="text-sm text-slate-500">Showing {paginatedLinks.length} of {linksData.length} links</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedLinks.map((link) => (
               <motion.div 
                 key={link.id}
-                whileHover={{ y: -4 }}
-                className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all group"
+                whileHover={{ y: -6, shadow: "0 20px 25px -5px rgb(16 185 129 / 0.05), 0 8px 10px -6px rgb(16 185 129 / 0.05)" }}
+                className="bg-white/70 backdrop-blur-md rounded-[2rem] p-8 border border-slate-200/60 shadow-sm hover:border-emerald-200/50 transition-all duration-300 group relative overflow-hidden"
               >
-                <div className="flex justify-between items-start mb-4">
-                  <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full uppercase tracking-wider">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:bg-emerald-500/10 transition-colors"></div>
+                
+                <div className="flex justify-between items-start mb-6 relative z-10">
+                  <span className="px-4 py-1.5 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded-full uppercase tracking-widest border border-emerald-100/50">
                     {link.category}
                   </span>
-                  <Link href={`/links/${link.slug}.html`} className="text-slate-300 group-hover:text-emerald-500 transition-colors">
-                    <ArrowRight size={20} />
+                  <Link href={`/links/${link.slug}.html`} className="p-2 rounded-full bg-slate-50 text-slate-400 group-hover:text-emerald-600 group-hover:bg-emerald-50 transition-all duration-300">
+                    <ArrowRight size={18} />
                   </Link>
                 </div>
-                <Link href={`/links/${link.slug}.html`}>
-                  <h3 className="font-display text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">
+                
+                <Link href={`/links/${link.slug}.html`} className="relative z-10 block">
+                  <h3 className="font-display text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-800 transition-colors leading-tight">
                     {link.title}
                   </h3>
                 </Link>
-                <p className="text-slate-600 text-sm mb-6 line-clamp-2">
+                
+                <p className="text-slate-500 text-sm mb-8 line-clamp-2 leading-relaxed relative z-10">
                   {link.shortDescription}
                 </p>
-                <div className="flex items-center gap-3">
+                
+                <div className="flex items-center gap-4 relative z-10">
                   <Link 
                     href={`/links/${link.slug}.html`}
-                    className="flex-grow text-center py-2.5 bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 font-semibold rounded-xl transition-colors text-sm"
+                    className="flex-grow text-center py-3.5 bg-slate-900 text-white hover:bg-emerald-600 font-bold rounded-2xl transition-all duration-300 text-sm shadow-lg shadow-slate-200 hover:shadow-emerald-200"
                   >
-                    View Details
+                    View Guide
                   </Link>
                   <a 
                     href={link.externalUrl} 
                     target="_blank" 
                     rel="noopener noreferrer nofollow"
-                    className="p-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl transition-colors"
-                    title="Direct Official Link"
+                    className="p-3.5 bg-white border border-slate-200 text-slate-400 hover:text-emerald-600 hover:border-emerald-200 rounded-2xl transition-all duration-300"
+                    title="Official Portal"
                   >
-                    <ExternalLink size={18} />
+                    <ExternalLink size={20} />
                   </a>
                 </div>
               </motion.div>
