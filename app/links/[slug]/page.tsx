@@ -64,27 +64,27 @@ export default async function LinkPage({ params }: Props) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col">
+    <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-            <span className="font-display font-bold text-xl tracking-tight text-slate-900 hidden sm:inline">Sarkari Link Hub</span>
+      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-emerald-200 group-hover:scale-110 transition-transform">S</div>
+            <span className="font-display font-bold text-2xl tracking-tight text-slate-900 hidden sm:inline">Sarkari Link Hub</span>
           </Link>
-          <Link href="/" className="text-sm font-medium text-slate-600 hover:text-emerald-600 flex items-center gap-1">
-            <ArrowLeft size={16} />
+          <Link href="/" className="px-5 py-2.5 rounded-xl bg-slate-100 text-sm font-bold text-slate-600 hover:bg-emerald-600 hover:text-white flex items-center gap-2 transition-all">
+            <ArrowLeft size={18} />
             Back to Home
           </Link>
         </div>
       </header>
 
-      <main className="flex-grow py-8 px-4 min-h-[70vh]">
+      <main className="flex-grow py-12 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8 overflow-x-auto whitespace-nowrap pb-2">
@@ -217,15 +217,39 @@ export default async function LinkPage({ params }: Props) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-12 px-4 mt-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-            <span className="font-display font-bold text-xl tracking-tight text-white">Sarkari Link Hub</span>
+      <footer className="bg-slate-950 text-slate-400 py-20 px-4 border-t border-slate-900 mt-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+            <div className="md:col-span-2">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                <span className="font-display font-bold text-2xl tracking-tight text-white">Sarkari Link Hub</span>
+              </div>
+              <p className="max-w-sm mb-8 leading-relaxed text-slate-400">
+                The most reliable directory for official government service links. We help you find the right portal without the confusion of ads or third-party blogs.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-white font-bold text-lg mb-8">Quick Links</h4>
+              <ul className="space-y-4 text-sm font-medium">
+                <li><Link href="/" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Home</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> About Us</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Privacy Policy</Link></li>
+                <li><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> Disclaimer</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white font-bold text-lg mb-8">Top Categories</h4>
+              <ul className="space-y-4 text-sm font-medium">
+                {linksData.map(l => l.category).filter((v, i, a) => a.indexOf(v) === i).slice(0, 4).map(cat => (
+                  <li key={cat}><Link href="#" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><ChevronRight size={14} /> {cat}</Link></li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <p className="text-xs max-w-2xl mx-auto">
-            &copy; {new Date().getFullYear()} Sarkari Link Hub. All rights reserved. Providing direct access to official government portals for citizens.
-          </p>
+          <div className="pt-10 border-t border-slate-900 text-center text-xs tracking-widest uppercase text-slate-500">
+            <p>&copy; {new Date().getFullYear()} Sarkari Link Hub. All rights reserved. Not affiliated with any government entity.</p>
+          </div>
         </div>
       </footer>
     </div>
