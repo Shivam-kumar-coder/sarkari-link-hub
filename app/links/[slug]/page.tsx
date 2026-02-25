@@ -84,7 +84,7 @@ export default async function LinkPage({ params }: Props) {
         </div>
       </header>
 
-      <main className="flex-grow py-8 px-4">
+      <main className="flex-grow py-8 px-4 min-h-[70vh]">
         <div className="max-w-4xl mx-auto">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8 overflow-x-auto whitespace-nowrap pb-2">
