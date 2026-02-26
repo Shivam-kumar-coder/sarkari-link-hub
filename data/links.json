@@ -257,5 +257,261 @@
       }
     ],
     "keywords": ["gst login", "gst portal dashboard", "file gst return login", "official gst link"]
+  },
+  {
+    "id": "16",
+    "title": "CDSCO SUGAM Portal Login",
+    "slug": "cdsco-sugam-portal-login",
+    "category": "Drug Control",
+    "shortDescription": "Official login for drug manufacturers and importers to apply for licenses and permissions.",
+    "externalUrl": "https://cdscoonline.gov.in/CDSCO/homepage",
+    "metaDescription": "Login to SUGAM portal for CDSCO online services. Official link for drug, medical device, and cosmetic licensing in India.",
+    "content": "SUGAM portal CDSCO ka ek digital platform hai jo pharmaceutical companies aur importers ko regulatory approvals lene mein madad karta hai. \n\n### Sugam Portal Par Kya Hota Hai?\n- **Drug License Application:** Nayi dawaiyon (New Drugs) ki approval ke liye.\n- **Import License:** Videsh se dawai mangwane ke liye registration.\n- **Cosmetic Registration:** Beauty products ke import aur manufacturing ke liye registration.\n\n### Login Kaise Karein?\n1. Link par click karke portal open karein.\n2. Registered User ID aur Password daalein.\n3. Captcha bhar kar dashboard access karein.",
+    "faqs": [
+      {
+        "question": "Naya account kaise banayein?",
+        "answer": "Portal par 'Sign Up' button par click karke apne business details aur ID proof upload karein."
+      }
+    ],
+    "keywords": ["cdsco login", "sugam portal", "drug license online", "cdsco registration"]
+  },
+  {
+    "id": "17",
+    "title": "Check Drug License Application Status",
+    "slug": "track-cdsco-application-status",
+    "category": "Drug Control",
+    "shortDescription": "Track the status of your drug manufacturing or import license application online.",
+    "externalUrl": "https://cdscoonline.gov.in/CDSCO/trackApplication",
+    "metaDescription": "Track CDSCO application status. Enter your application number to check the progress of your drug or cosmetic license.",
+    "content": "CDSCO mein file ki gayi kisi bhi application ka status check karna ab aasaan hai. Isse aapko pata chalta hai ki file kis officer ke paas pending hai.\n\n### Tracking Process:\n1. SUGAM portal ke tracking page par jayein.\n2. Apna 'File Number' ya 'Application Number' enter karein.\n3. Screen par real-time status dikhayega (e.g., Query Raised, Approved, Rejected).",
+    "faqs": [
+      {
+        "question": "Query aane par kya karein?",
+        "answer": "Sugam portal mein login karke 'Query Reply' section mein maangi gayi jankari upload karein."
+      }
+    ],
+    "keywords": ["track drug license", "cdsco status check", "sugam application tracking"]
+  },
+  {
+    "id": "18",
+    "title": "Apply for New Driving License (DL)",
+    "slug": "apply-permanent-driving-license-online",
+    "category": "Parivahan",
+    "shortDescription": "Official link to apply for a permanent Driving License after completing the Learner's License period.",
+    "externalUrl": "https://sarathi.parivahan.gov.in/sarathiservice/applyDL.do",
+    "metaDescription": "Apply for a permanent Driving License (DL) online. Complete guide for slot booking, fee payment, and document upload on Sarathi portal.",
+    "content": "Learner's License (LL) milne ke 1 mahine baad aur 6 mahine se pehle aap Permanent DL ke liye apply kar sakte hain.\n\n### DL Apply Karne ka Tarika:\n1. Sarathi Parivahan portal par 'Apply for New DL' chunein.\n2. Apna Learner's License number aur Date of Birth daalein.\n3. Form check karein aur 'Vehicle Class' select karein.\n4. Required documents upload karein aur Fees pay karein.\n5. RTO test ke liye 'Slot Booking' karein.\n\n### Test Ke Liye Zaroori:\nTest ke waqt aapke paas asli documents aur wahi gaadi honi chahiye jiske liye aapne apply kiya hai.",
+    "faqs": [
+      {
+        "question": "DL kitne din mein banta hai?",
+        "answer": "Test pass karne ke baad 15-30 working days mein DL aapke address par post se aa jata hai."
+      }
+    ],
+    "keywords": ["apply dl online", "permanent driving license", "sarathi dl application", "dl slot booking"]
+  },
+  {
+    "id": "19",
+    "title": "Driving License Renewal Online",
+    "slug": "dl-renewal-online-guide",
+    "category": "Parivahan",
+    "shortDescription": "Renew your expired or about-to-expire Driving License through Sarathi Parivahan.",
+    "externalUrl": "https://sarathi.parivahan.gov.in/sarathiservice/renewalDL.do",
+    "metaDescription": "Online DL renewal guide. Steps to renew your driving license, fee details, and required documents like Form 1-A.",
+    "content": "Driving license ki validity khatam hone se 1 saal pehle ya khatam hone ke baad aap renewal ke liye apply kar sakte hain.\n\n### Renewal Process:\n1. Sarathi portal par 'Services on DL' chunein.\n2. DL Number aur DOB enter karein.\n3. 'Renewal of DL' option select karein.\n4. Agar umar 40+ hai, toh Doctor se 'Form 1-A' (Medical Certificate) sign karwake upload karein.\n5. Fees pay karein aur application submit karein.",
+    "faqs": [
+      {
+        "question": "Grace period kitna hota hai?",
+        "answer": "DL expire hone ke 1 saal baad tak aap bina dobara test diye renew kara sakte hain, lekin penalty lagti hai."
+      }
+    ],
+    "keywords": ["dl renewal online", "renew driving license", "form 1a for dl", "parivahan renewal"]
+  },
+  {
+    "id": "20",
+    "title": "Check Vehicle Challan Status",
+    "slug": "check-traffic-challan-online",
+    "category": "Parivahan",
+    "shortDescription": "Check and pay your traffic police challans (e-challan) online for any vehicle.",
+    "externalUrl": "https://echallan.parivahan.gov.in/index/accused-challan",
+    "metaDescription": "Check e-challan status by vehicle number or DL. Pay your traffic fines online on the official e-challan Parivahan portal.",
+    "content": "Traffic rules todne par camera ya police dwara kata gaya challan aap online check kar sakte hain.\n\n### Challan Kaise Dekhen?\n1. E-challan portal par jayein.\n2. 'Vehicle Number' ya 'Challan Number' ya 'DL Number' enter karein.\n3. Gaadi ka Chassis ya Engine number ke aakhri 5 digit daalein.\n4. 'Get Detail' par click karein. Agar koi challan hoga toh list dikh jayegi.\n\n### Online Payment:\nAap debit card, credit card ya UPI se turant fine bhar sakte hain.",
+    "faqs": [
+      {
+        "question": "Challan na bharne par kya hoga?",
+        "answer": "Challan pending hone par aapka RC ya DL block ho sakta hai aur mamla court ja sakta hai."
+      }
+    ],
+    "keywords": ["check challan online", "e challan status", "pay traffic fine", "vehicle challan search"]
+  },
+  {
+    "id": "21",
+    "title": "EPF Member Passbook Login",
+    "slug": "epf-passbook-balance-check",
+    "category": "EPFO",
+    "shortDescription": "Login to view your EPF balance, interest, and download your PF passbook.",
+    "externalUrl": "https://passbook.epfindia.gov.in/MemberPassBook/Login",
+    "metaDescription": "Check PF balance online. Official EPFO member passbook login to view monthly contributions and interest credits.",
+    "content": "EPF Member Passbook portal se aap apne Provident Fund (PF) ka balance aur status check kar sakte hain.\n\n### Balance Kaise Dekhen?\n1. Link par click karein.\n2. Apna 12-digit UAN (Universal Account Number) enter karein.\n3. Password aur Captcha daalkar login karein.\n4. Apni Member ID select karein aur 'View Passbook' par click karein.\n\n### Passbook Details:\nIsme employee aur employer dono ka contribution alag-alag dikhta hai.",
+    "faqs": [
+      {
+        "question": "Login nahi ho raha toh kya karein?",
+        "answer": "Check karein ki aapka UAN active hai ya nahi. Naya UAN activate karne ke 6 ghante baad passbook dikhti hai."
+      }
+    ],
+    "keywords": ["pf balance check", "epf passbook login", "uan passbook download", "check provident fund balance"]
+  },
+  {
+    "id": "22",
+    "title": "UAN Activation Online",
+    "slug": "how-to-activate-uan-online",
+    "category": "EPFO",
+    "shortDescription": "Activate your Universal Account Number (UAN) to access EPF services online.",
+    "externalUrl": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/no-auth/activateUan/getUanPromotionDetails",
+    "metaDescription": "Step-by-step guide to activate UAN. Essential for checking PF balance, updating KYC, and online PF withdrawal.",
+    "content": "Jab tak aapka UAN active nahi hoga, aap online PF ka koi bhi kaam nahi kar payenge.\n\n### Activation Process:\n1. Portal par 'Activate UAN' link par jayein.\n2. UAN, Aadhaar, Name, DOB aur Mobile number enter karein (Jo Aadhaar se link ho).\n3. 'Get Authorization Pin' par click karein.\n4. Mobile par aaye OTP ko bhar kar 'Activate UAN' karein.\n\n### Password:\nActivation ke baad aapke mobile par ek temporary password aayega, jise aap baad mein badal sakte hain.",
+    "faqs": [
+      {
+        "question": "Details match nahi ho rahi, kya karein?",
+        "answer": "Agar Aadhaar aur EPFO records mein naam ya DOB alag hai, toh pehle use apne employer se theek karwayein."
+      }
+    ],
+    "keywords": ["activate uan", "uan registration", "epfo uan activation link", "pf uan login setup"]
+  },
+  {
+    "id": "23",
+    "title": "Track PF Claim Status",
+    "slug": "track-epfo-claim-status-online",
+    "category": "EPFO",
+    "shortDescription": "Check the status of your PF withdrawal, transfer, or pension claim online.",
+    "externalUrl": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+    "metaDescription": "Track your PF claim status. Find out if your PF withdrawal application is under process, settled, or rejected by EPFO.",
+    "content": "Agar aapne PF nikalne ya transfer karne ke liye online apply kiya hai, toh aap uska current status track kar sakte hain.\n\n### Kaise Track Karein?\n1. Unified Member Portal par login karein.\n2. Menu mein 'Online Services' par jayein.\n3. 'Track Claim Status' par click karein.\n4. Settlement ki date aur status wahan dikh jayega.",
+    "faqs": [
+      {
+        "question": "Status 'Under Process' kitne din rehta hai?",
+        "answer": "Usually 7 se 15 dino mein claim settle ho jata hai."
+      }
+    ],
+    "keywords": ["pf claim status", "track epfo withdrawal", "settle pf status", "uan claim tracking"]
+  },
+  {
+    "id": "24",
+    "title": "Search HSN Code (Goods & Services)",
+    "slug": "hsn-sac-code-finder-gst",
+    "category": "GST",
+    "shortDescription": "Find the correct HSN/SAC code and tax rates for your products and services.",
+    "externalUrl": "https://services.gst.gov.in/services/searchhsn",
+    "metaDescription": "Search HSN and SAC codes online. Official GST portal tool to find 4, 6, or 8 digit codes for accurate billing.",
+    "content": "GST invoices ke liye sahi HSN code hona mandatory hai. Ye tool aapko wahi code dhundhne mein madad karta hai.\n\n### Steps:\n1. Search bar mein product ka naam likhen (e.g., 'Sugar' ya 'Mobile').\n2. System usse jude sabhi HSN codes aur unke tax brackets dikha dega.",
+    "faqs": [
+      {
+        "question": "SAC code kya hai?",
+        "answer": "Services ke liye use hone wale code ko SAC (Services Accounting Code) kehte hain."
+      }
+    ],
+    "keywords": ["hsn finder", "sac code search", "gst tax rates", "hsn code for goods"]
+  },
+  {
+    "id": "25",
+    "title": "Verify PAN Card Status (Instant)",
+    "slug": "verify-pan-card-details-online",
+    "category": "Tax",
+    "shortDescription": "Verify if a PAN card is active and check the name as per Income Tax records.",
+    "externalUrl": "https://www.incometax.gov.in/iec/foportal/services/verify-your-pan",
+    "metaDescription": "Verify PAN online. Check PAN status and owner name on the official Income Tax portal to avoid fraudulent transactions.",
+    "content": "Business transactions se pehle PAN card verify karna ek safe practice hai.\n\n### Kaise Verify Karein?\n1. PAN Number, Full Name, DOB aur Mobile enter karein.\n2. Mobile par aaye OTP ko bharein.\n3. System batayega 'PAN is Active' aur details match ho rahi hain ya nahi.",
+    "faqs": [
+      {
+        "question": "Kya dusre ka PAN verify kar sakte hain?",
+        "answer": "Haan, lekin aapke paas unka wahi mobile hona chahiye jo PAN se link hai OTP ke liye."
+      }
+    ],
+    "keywords": ["verify pan card", "check pan status", "income tax pan verification", "pan owner name search"]
+  },
+  {
+    "id": "26",
+    "title": "Check Aadhaar-PAN Linking Status",
+    "slug": "check-aadhaar-pan-link-status",
+    "category": "Tax",
+    "shortDescription": "Check if your Aadhaar is successfully linked with your PAN card online.",
+    "externalUrl": "https://eportal.incometax.gov.in/iec/foportal/services/link-aadhaar-status",
+    "metaDescription": "Aadhaar PAN link status check. Official link to verify if your PAN is operative or inoperative due to Aadhaar linking.",
+    "content": "India mein PAN card ko Aadhaar se link karna mandatory hai. Agar link nahi hai, toh PAN 'Inoperative' ho sakta hai.\n\n### Kaise Check Karein?\n1. Link par click karein.\n2. PAN Number aur Aadhaar Number enter karein.\n3. 'View Link Aadhaar Status' par click karein.\n4. Agar link hai, toh message aayega 'Already Linked'.",
+    "faqs": [
+      {
+        "question": "Link nahi hai toh kya karein?",
+        "answer": "Income Tax portal par 1000 rupaye ki penalty bhar kar 'Link Aadhaar' option se link karein."
+      }
+    ],
+    "keywords": ["aadhaar pan link status", "check pan aadhaar link", "pan status online"]
+  },
+  {
+    "id": "27",
+    "title": "Apply for New Voter ID Card",
+    "slug": "apply-voter-id-card-online",
+    "category": "Election Commission",
+    "shortDescription": "Register as a new voter and apply for a Voter ID card (Voter Service Portal).",
+    "externalUrl": "https://voters.eci.gov.in/signup",
+    "metaDescription": "Apply for new Voter ID (Form 6). Official NVSP/ECI portal for voter registration and identity card application.",
+    "content": "Agar aapki umar 18 saal ho gayi hai, toh aap naye Voter ID ke liye 'Form 6' online bhar sakte hain.\n\n### Requirements:\n- Photo\n- Age Proof (Birth Certificate/Aadhaar)\n- Address Proof (Aadhaar/Electricity Bill)\n\n### Steps:\n1. NVSP portal par sign up karein.\n2. 'Form 6' select karein aur details bharein.\n3. Documents upload karke submit karein.",
+    "faqs": [
+      {
+        "question": "Voter card kitne din mein banta hai?",
+        "answer": "BLO verification ke baad usually 1-2 mahine mein card ghar aa jata hai."
+      }
+    ],
+    "keywords": ["new voter id registration", "form 6 voter id", "voter card apply online"]
+  },
+  {
+    "id": "28",
+    "title": "Download E-Voter ID (e-EPIC)",
+    "slug": "download-digital-voter-id-card",
+    "category": "Election Commission",
+    "shortDescription": "Download your digital Voter ID card (e-EPIC) in PDF format online.",
+    "externalUrl": "https://voters.eci.gov.in/download-epic",
+    "metaDescription": "Download e-EPIC online. Get your digital Voter ID card PDF using EPIC number or Form Reference Number.",
+    "content": "e-EPIC ek secure PDF version hai Voter ID card ka, jise aap mobile ya computer par download karke kahin bhi dikha sakte hain.\n\n### Kaise Download Karein?\n1. Portal par login karein.\n2. Apna EPIC Number (Voter ID number) daalein.\n3. Registered mobile par aaye OTP ko verify karein.\n4. PDF download karein.",
+    "faqs": [
+      {
+        "question": "Kya e-EPIC asli card jitna valid hai?",
+        "answer": "Haan, ye poori tarah se valid document hai."
+      }
+    ],
+    "keywords": ["download voter id pdf", "e-epic download", "digital voter card"]
+  },
+  {
+    "id": "29",
+    "title": "Search Name in Voter List",
+    "slug": "search-name-in-voter-list-online",
+    "category": "Election Commission",
+    "shortDescription": "Check if your name is present in the latest electoral roll/voter list.",
+    "externalUrl": "https://electoralsearch.eci.gov.in/",
+    "metaDescription": "Voter list name search. Find your polling station and serial number in the voter list using EPIC number or name details.",
+    "content": "Vote dene jane se pehle apna naam voter list mein check karna zaroori hai.\n\n### Kaise Dhundhen?\n1. 'Search by EPIC' (Voter ID se) ya 'Search by Details' (Naam, Father's Name se) chunein.\n2. Details bhar kar search karein.\n3. Aapko apna Polling Booth, Serial Number aur Part Number dikh jayega.",
+    "faqs": [
+      {
+        "question": "Agar naam list mein nahi hai toh kya karein?",
+        "answer": "Aapko dobara 'Form 6' bhar kar registration karwana hoga."
+      }
+    ],
+    "keywords": ["voter list name search", "check voter roll", "find polling booth"]
+  },
+  {
+    "id": "30",
+    "title": "Apply for New PAN Card (UTIITSL)",
+    "slug": "apply-new-pan-card-utiitsl",
+    "category": "Tax",
+    "shortDescription": "Apply for a fresh PAN card through the official UTIITSL portal.",
+    "externalUrl": "https://www.pan.utiitsl.com/PAN/newpanforidl.html",
+    "metaDescription": "Apply for new PAN card online. Official UTIITSL portal for Indian citizens to get a Permanent Account Number (Form 49A).",
+    "content": "Income Tax department ne PAN card ke liye do authorized agents banaye hain, UTIITSL unme se ek hai.\n\n### Application Steps:\n1. 'Form 49A' select karein.\n2. Digital ya Physical mode chunein (Digital mode mein Aadhaar OTP chahiye).\n3. Fees (approx 107/-) pay karein.\n4. Document submit hone ke baad 10-15 din mein PAN ghar aa jata hai.",
+    "faqs": [
+      {
+        "question": "Physical mode mein kya karna hota hai?",
+        "answer": "Isme aapko form print karke documents ke saath UTI office bhejna hota hai."
+      }
+    ],
+    "keywords": ["new pan card apply", "utiitsl pan registration", "pan card form 49a"]
   }
+]
 ]
