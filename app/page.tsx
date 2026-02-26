@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Search, ExternalLink, ChevronRight, Menu, X, ArrowRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import linksDataRaw from '@/data/links.json';
 import { searchLinks, LinkData } from '@/lib/search';
 
