@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "Passport Application",
+    "slug": "passport-application",
+    "category": "Travel",
+    "description": "Apply for a new passport or renew your existing one online.",
+    "overview": "The passport application process allows citizens to obtain travel documents for international travel.",
+    "howToApply": "1. Visit the official portal. 2. Fill out the application form. 3. Pay the fee. 4. Schedule an appointment.",
+    "documentsRequired": ["Birth Certificate", "Identity Proof", "Address Proof", "Recent Photographs"],
+    "officialUrl": "https://example.gov/passport",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Driver's License Renewal",
+    "slug": "drivers-license-renewal",
+    "category": "Transport",
+    "description": "Renew your driver's license before it expires to avoid penalties.",
+    "overview": "Keep your driving privileges active by renewing your license every 5-10 years depending on your state.",
+    "howToApply": "1. Log in to the DMV portal. 2. Verify your details. 3. Pay the renewal fee. 4. Download your temporary license.",
+    "documentsRequired": ["Current License", "Vision Test Result", "Payment Method"],
+    "officialUrl": "https://example.gov/dmv",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "Social Security Benefits",
+    "slug": "social-security-benefits",
+    "category": "Social Welfare",
+    "description": "Apply for retirement, disability, or survivor benefits.",
+    "overview": "Social Security provides financial support to retired workers and those with disabilities.",
+    "howToApply": "1. Create a 'my Social Security' account. 2. Complete the online application. 3. Submit required evidence.",
+    "documentsRequired": ["SSN Card", "Tax Returns", "Bank Account Details"],
+    "officialUrl": "https://example.gov/ssa",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "title": "Business Registration",
+    "slug": "business-registration",
+    "category": "Business",
+    "description": "Register your new business entity with the state and federal government.",
+    "overview": "Legally establish your business to start operations and hire employees.",
+    "howToApply": "1. Choose a business name. 2. Register with the Secretary of State. 3. Apply for an EIN.",
+    "documentsRequired": ["Articles of Incorporation", "Operating Agreement", "Owner ID"],
+    "officialUrl": "https://example.gov/business",
+    "featured": true
+  },
+  {
+    "id": "5",
+    "title": "Voter Registration",
+    "slug": "voter-registration",
+    "category": "Civic",
+    "description": "Register to vote in upcoming local, state, and federal elections.",
+    "overview": "Exercise your right to vote by ensuring you are registered in your current jurisdiction.",
+    "howToApply": "1. Check eligibility. 2. Fill out the registration form. 3. Submit via mail or online.",
+    "documentsRequired": ["Citizenship Proof", "State ID", "Utility Bill for Address"],
+    "officialUrl": "https://example.gov/vote",
+    "featured": true
+  },
+  {
+    "id": "6",
+    "title": "Small Business Grants",
+    "slug": "small-business-grants",
+    "category": "Business",
+    "description": "Explore available grants for small businesses and startups.",
+    "overview": "Government grants provide non-repayable funds to support economic growth and innovation.",
+    "howToApply": "1. Search for eligible grants. 2. Prepare a business proposal. 3. Submit application via Grants.gov.",
+    "documentsRequired": ["Business Plan", "Financial Statements", "Grant Proposal"],
+    "officialUrl": "https://example.gov/grants",
+    "featured": true
+  },
+  {
+    "id": "7",
+    "title": "Unemployment Insurance",
+    "slug": "unemployment-insurance",
+    "category": "Social Welfare",
+    "description": "File a claim for unemployment benefits if you have lost your job.",
+    "overview": "Temporary financial assistance for workers who are unemployed through no fault of their own.",
+    "howToApply": "1. File a claim with your state agency. 2. Provide employment history. 3. Certify weekly eligibility.",
+    "documentsRequired": ["Last Employer Details", "W-2 Forms", "Direct Deposit Info"],
+    "officialUrl": "https://example.gov/unemployment",
+    "featured": false
+  },
+  {
+    "id": "8",
+    "title": "Student Loan Forgiveness",
+    "slug": "student-loan-forgiveness",
+    "category": "Education",
+    "description": "Apply for public service loan forgiveness or other relief programs.",
+    "overview": "Programs designed to reduce or eliminate student debt for eligible borrowers.",
+    "howToApply": "1. Verify loan eligibility. 2. Complete the PSLF form. 3. Submit to the Department of Education.",
+    "documentsRequired": ["Employment Certification", "Loan Statements", "Tax Returns"],
+    "officialUrl": "https://example.gov/education",
+    "featured": false
+  },
+  {
+    "id": "9",
+    "title": "Birth Certificate Request",
+    "slug": "birth-certificate-request",
+    "category": "Vital Records",
+    "description": "Order a certified copy of a birth certificate for legal purposes.",
+    "overview": "Vital records are essential for identity verification and legal documentation.",
+    "howToApply": "1. Identify the issuing office. 2. Complete the request form. 3. Pay the processing fee.",
+    "documentsRequired": ["Valid ID", "Proof of Relationship", "Application Form"],
+    "officialUrl": "https://example.gov/vital",
+    "featured": false
+  },
+  {
+    "id": "10",
+    "title": "Tax Filing (Individual)",
+    "slug": "tax-filing-individual",
+    "category": "Finance",
+    "description": "File your annual federal and state income tax returns.",
+    "overview": "Ensure compliance with tax laws by filing your returns by the annual deadline.",
+    "howToApply": "1. Gather income documents. 2. Choose a filing method (e-file or paper). 3. Submit to the IRS.",
+    "documentsRequired": ["W-2 Forms", "1099 Forms", "Deduction Receipts"],
+    "officialUrl": "https://example.gov/irs",
+    "featured": false
+  }
+]
