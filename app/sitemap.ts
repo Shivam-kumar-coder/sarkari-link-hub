@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import links from '@/data/links.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.APP_URL || 'https://govportal.example.com';
+  const baseUrl = process.env.APP_URL || 'https://sarkari-link-hub.vercel.app';
 
   // Base routes
   const routes = [
