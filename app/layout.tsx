@@ -7,8 +7,45 @@ import { Landmark } from 'lucide-react';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'GovPortal - Official Government Services Directory',
-  description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
+  metadataBase: new URL(process.env.APP_URL || 'https://govportal.example.com'),
+  title: {
+    default: 'GovPortal - Official Government Services Directory',
+    template: '%s | GovPortal'
+  },
+  description: 'Find and apply for government services easily. Official guides, documents required, and direct application links for 2000+ services.',
+  keywords: ['government services', 'apply for passport', 'drivers license renewal', 'social security benefits', 'business registration', 'voter registration', 'official guides'],
+  authors: [{ name: 'GovPortal Team' }],
+  creator: 'GovPortal',
+  publisher: 'GovPortal',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: 'GovPortal - Official Government Services Directory',
+    description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
+    url: './',
+    siteName: 'GovPortal',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GovPortal - Official Government Services Directory',
+    description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
