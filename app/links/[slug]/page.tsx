@@ -31,10 +31,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `How to apply for ${service.title} - Official Guide`,
     description: service.description,
+    alternates: {
+      canonical: `/links/${slug}`,
+    },
     openGraph: {
       title: `How to apply for ${service.title} - Official Guide`,
       description: service.description,
       type: 'article',
+      url: `/links/${slug}`,
     },
   };
 }
@@ -171,7 +175,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <div className="bg-slate-900 rounded-[2.5rem] p-10 text-white shadow-2xl sticky top-24">
               <h3 className="text-2xl font-black mb-6">Need Assistance?</h3>
               <p className="text-slate-400 mb-8 text-base leading-relaxed">
-                If you encounter issues with the official portal, please contact the respective department's support line directly.
+                If you encounter issues with the official portal, please contact the respective department&apos;s support line directly.
               </p>
               <div className="space-y-4">
                 <div className="p-4 bg-white/5 rounded-2xl border border-white/10">
