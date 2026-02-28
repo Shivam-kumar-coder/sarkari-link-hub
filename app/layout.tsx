@@ -1,0 +1,73 @@
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Link from 'next/link';
+import { Landmark } from 'lucide-react';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+
+export const metadata: Metadata = {
+  title: 'GovPortal - Official Government Services Directory',
+  description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${inter.variable}`}>
+      <body className="font-sans bg-slate-50 text-slate-900 min-h-screen flex flex-col" suppressHydrationWarning>
+        <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-2 text-indigo-600 font-bold text-xl">
+              <Landmark className="w-8 h-8" />
+              <span>GovPortal</span>
+            </Link>
+            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+              <Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+              <Link href="/#categories" className="hover:text-indigo-600 transition-colors">Categories</Link>
+              <Link href="/#services" className="hover:text-indigo-600 transition-colors">All Services</Link>
+            </nav>
+          </div>
+        </header>
+
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <div className="flex items-center gap-2 text-white font-bold text-lg mb-4">
+                  <Landmark className="w-6 h-6" />
+                  <span>GovPortal</span>
+                </div>
+                <p className="text-sm leading-relaxed">
+                  The official directory for all government services. We simplify the process of finding and applying for the services you need.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+                  <li><Link href="/#categories" className="hover:text-white transition-colors">Categories</Link></li>
+                  <li><Link href="/#services" className="hover:text-white transition-colors">Directory</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Legal</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                  <li><Link href="#" className="hover:text-white transition-colors">Terms of Service</Link></li>
+                  <li><Link href="#" className="hover:text-white transition-colors">Accessibility</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="pt-8 border-t border-slate-800 text-center text-xs">
+              <p>© {new Date().getFullYear()} GovPortal. All rights reserved. This is a directory portal.</p>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}
