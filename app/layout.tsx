@@ -17,14 +17,16 @@ export const metadata: Metadata = {
   authors: [{ name: 'sks-technologies Team' }],
   creator: 'sarkari link hub',
   publisher: 'sarkari link hub',
-  // FIXED: Icons settings with cache-busting logic
+  // Metadata for Icons
   icons: {
     icon: [
-      { url: '/favicon.ico', url: '/favicon.ico?v=1' },
+      { url: '/favicon.ico', url: '/favicon.ico' },
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
     ],
-    shortcut: '/favicon.ico?v=1',
-    apple: '/apple-touch-icon.png?v=1',
+    shortcut: ['/favicon.ico'],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   formatDetection: {
     email: false,
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/apple-touch-icon.png', // SEO image fallback
+        url: '/apple-touch-icon.png',
         width: 800,
         height: 600,
       },
@@ -78,11 +80,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-        {/* Force refresh icons with versioning query strings */}
-        <link rel="icon" href="/favicon.ico?v=1" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
-        {/* Extra check for mobile browsers */}
-        <meta name="theme-color" content="#ffffff" />
+        {/* Force browser to find favicon */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
         <script
           type="application/ld+json"
