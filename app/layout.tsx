@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.APP_URL || 'https://sarkari-link-hub.vercel.app'),
   title: {
-    default: 'GovPortal - Official Government Services Directory',
+    default: 'sarkari link hub - Official Government Services Directory',
     template: '%s | sarkari link hub'
   },
   description: 'Find and apply for government services easily. Official guides, documents required, and direct application links for 2000+ services.',
