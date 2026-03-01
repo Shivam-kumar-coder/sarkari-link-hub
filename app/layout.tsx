@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GovPortal - Official Government Services Directory',
+    title: 'sarkari link hub - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
     images: ['/apple-touch-icon.png'],
   },
