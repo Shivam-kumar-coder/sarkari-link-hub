@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'GovPortal - Official Government Services Directory',
+    title: 'sarkari link hub - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
     url:'https://sarkari-link-hub.vercel.app',
     siteName: 'sarkari link hub',
