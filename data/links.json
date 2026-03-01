@@ -344,7 +344,7 @@
     "overview": "The e-Pay Tax facility on the Income Tax portal allows taxpayers to make various tax payments online. You can pay advance tax, self-assessment tax, regular tax, TDS/TCS (by deductors), and other direct taxes without visiting a bank. The payment is made through internet banking of empanelled banks or debit cards, and a challan is generated instantly.",
     "howToApply": "1. Log in or visit the e-Pay Tax page on the portal. 2. Select the relevant challan (e.g., ITNS 280 for individuals/HUFs). 3. Enter your PAN and other required details. 4. Choose your payment mode (net banking/debit card). 5. Complete the payment and download the challan for your records.",
     "documentsRequired": ["Permanent Account Number (PAN)", "Bank Account with Net Banking", "Details of Tax to be Paid (Assessment Year, Type of Tax)"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/e-pay-tax/pre-login",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/login",
     "featured": true
   },
   {
@@ -356,7 +356,7 @@
     "overview": "e-Verification is a mandatory step after filing an income tax return to complete the filing process. It authenticates that the return was filed by you. The portal offers multiple methods for e-verification including Aadhaar OTP, net banking, DEMAT account, bank account, or generating an EVC. Timely verification ensures your return is processed by the Income Tax Department.",
     "howToApply": "1. Log in to the e-Filing portal. 2. Go to the 'e-File' menu and select 'Income Tax Returns' then 'e-Verify Return'. 3. Choose the return you want to verify. 4. Select your preferred verification method (e.g., Aadhaar OTP). 5. Follow the on-screen instructions to complete verification.",
     "documentsRequired": ["Login Credentials (PAN & Password)", "Access to chosen verification method (e.g., Mobile for Aadhaar OTP, Net Banking)"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/e-verify-return",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/eVerifyReturn-bl",
     "featured": false
   },
   {
