@@ -7,16 +7,21 @@ import { Landmark } from 'lucide-react';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL || 'https://govportal.example.com'),
+  metadataBase: new URL(process.env.APP_URL || 'https://sarkari-link-hub.vercel.app'),
   title: {
     default: 'GovPortal - Official Government Services Directory',
-    template: '%s | GovPortal'
+    template: '%s | sarkari link hub'
   },
   description: 'Find and apply for government services easily. Official guides, documents required, and direct application links for 2000+ services.',
   keywords: ['government services', 'apply for passport', 'drivers license renewal', 'social security benefits', 'business registration', 'voter registration', 'official guides'],
   authors: [{ name: 'GovPortal Team' }],
   creator: 'GovPortal',
   publisher: 'GovPortal',
+  // ADDED: Icons property to replace Vercel Logo with your Logo
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   formatDetection: {
     email: false,
     address: false,
@@ -26,7 +31,7 @@ export const metadata: Metadata = {
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
     url: './',
-    siteName: 'GovPortal',
+    siteName: 'GovPortal', // This helps Google show 'GovPortal' instead of Vercel
     locale: 'en_US',
     type: 'website',
   },
@@ -49,8 +54,24 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // ADDED: Structured Data (Schema) to strictly tell Google your Site Name
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GovPortal", // Your Site Name
+    "alternateName": ["Gov Portal", "Government Portal"],
+    "url": "https://govportal.example.com" // Update this to your real domain
+  };
+
   return (
     <html lang="en" className={`${inter.variable}`}>
+      {/* ADDED: Injecting the Schema into the head */}
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans bg-slate-50 text-slate-900 min-h-screen flex flex-col" suppressHydrationWarning>
         <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
