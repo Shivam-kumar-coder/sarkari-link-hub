@@ -404,7 +404,7 @@
     "overview": "Linking Aadhaar with PAN is mandatory as per income tax laws. This online service on the e-Filing portal allows taxpayers to link their 12-digit Aadhaar number with their PAN. The process is quick, requiring only Aadhaar and PAN details along with OTP validation. Successful linking ensures your PAN remains active and tax returns can be processed.",
     "howToApply": "1. Visit the 'Link Aadhaar with PAN' page. 2. Enter your PAN and Aadhaar number. 3. Confirm your name as per Aadhaar. 4. Validate using the OTP sent to your Aadhaar-linked mobile number. 5. Submit the request. A success message confirms the linking.",
     "documentsRequired": ["Permanent Account Number (PAN)", "Aadhaar Card", "Mobile Number Linked to Aadhaar"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/link-aadhaar",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar",
     "featured": true
   },
   {
@@ -421,14 +421,14 @@
   },
   {
     "id": "36",
-    "title": "Know Your Assessing Officer (AO)",
+    "title": "check pan card online Know Your Assessing Officer (AO)",
     "slug": "know-your-assessing-officer-ao",
     "category": "Income Tax",
     "description": "Find your jurisdictional Assessing Officer (AO) details including the ward/circle based on your PAN or address.",
     "overview": "The 'Know Your AO' service helps taxpayers identify the correct Assessing Officer and the jurisdictional ward/circle where their PAN is registered. This information is crucial for correspondence, submitting specific applications, or understanding which office has jurisdiction over your tax matters.",
     "howToApply": "1. Visit the 'Know Your Assessing Officer (AO)' page. 2. Enter your PAN. 3. Alternatively, search by address details like state, city, and area. 4. Click on 'Submit'. 5. The system will display your AO's details, including the ward/circle and jurisdiction.",
     "documentsRequired": ["Permanent Account Number (PAN) or Residential Address Details"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/know-your-ao",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/knowYourAO",
     "featured": false
   },
   {
@@ -440,7 +440,7 @@
     "overview": "This service allows taxpayers to verify the status of taxes paid by them (e.g., advance tax, self-assessment tax). By entering the BSR code, challan serial number, and payment amount from your tax payment challan, you can confirm if the payment has been successfully received and credited by the department.",
     "howToApply": "1. Go to the 'Know Tax Payment Status' page. 2. Enter details from your tax challan: BSR Code of the bank branch, Challan Serial Number, and the amount paid. 3. Select the relevant assessment year and challan type (if applicable). 4. Enter the Captcha code. 5. Click 'Submit' to view the status.",
     "documentsRequired": ["Tax Payment Challan (with BSR Code, Challan No., Amount)"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/know-tax-payment-status",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/know-payment-status/payment-information",
     "featured": false
   },
   {
@@ -452,7 +452,7 @@
     "overview": "The 'Verify Service Request' feature allows taxpayers to monitor the progress of various service requests they have submitted through the portal. This includes requests for PAN updates, correction in name/date of birth, changes in contact details, or other profile-related services. You can check if the request is pending, processed, or rejected.",
     "howToApply": "1. Visit the 'Verify Service Request' page. 2. Enter your PAN. 3. Provide the Service Request Number (SRN) that was generated when you submitted your request. 4. Enter the Captcha code. 5. Click 'Submit' to view the current status of your request.",
     "documentsRequired": ["Permanent Account Number (PAN)", "Service Request Number (SRN)"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verify-service-request",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verifyServiceRequest",
     "featured": false
   },
   {
@@ -464,7 +464,7 @@
     "overview": "This reporting mechanism is for taxpayers who suspect any fraudulent activity, unauthorized access, or misuse of their account or PAN details on the e-Filing portal. By submitting this form, you can alert the Income Tax Department, who can then take necessary action to secure your account and investigate the issue.",
     "howToApply": "1. Navigate to the 'Report Account Misuse' page. 2. Fill in the required details, including your PAN, name, contact information, and a detailed description of the suspected misuse. 3. Provide any supporting information or evidence if available. 4. Submit the report. An acknowledgement will be generated.",
     "documentsRequired": ["Permanent Account Number (PAN)", "Details and Description of Misuse", "Contact Information"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/report-account-misuse",
+    "officialUrl": "https://www.incometax.gov.in/iec/foportal/e-filing%20account%20misuse",
     "featured": false
   },
   {
