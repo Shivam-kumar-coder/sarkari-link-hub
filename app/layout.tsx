@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'sks-technologies Team' }],
   creator: 'sarkari link hub',
   publisher: 'sarkari link hub',
-  // FIXED: Yahan favicon aur apple-touch ke paths ko ensure kiya gaya hai
+  // FIXED: Icons settings with cache-busting logic
   icons: {
     icon: [
-      { url: '/favicon.ico' },
+      { url: '/favicon.ico', url: '/favicon.ico?v=1' },
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.ico?v=1',
+    apple: '/apple-touch-icon.png?v=1',
   },
   formatDetection: {
     email: false,
@@ -78,9 +78,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-        {/* Manual Favicon Link for older browsers */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Force refresh icons with versioning query strings */}
+        <link rel="icon" href="/favicon.ico?v=1" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
+        {/* Extra check for mobile browsers */}
+        <meta name="theme-color" content="#ffffff" />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
