@@ -74,7 +74,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "WebSite",
     "name": "sarkari link hub",
     "alternateName": ["sarkari link hub", "sarkari link hub 1"],
-    "url": "https://sarkari-link-hub.vercel.app"
+    "url": "https://sarkari-link-hub.vercel.app",
+    "logo": "https://sarkari-link-hub.vercel.app/favicon.ico"
   };
 
   return (
