@@ -36,10 +36,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
-    url: 'sarkari-link-hub.vercel.app',
+    url:'https://sarkari-link-hub.vercel.app',
     siteName: 'sarkari link hub',
     locale: 'en_US',
-    type: 'Organization',
+    type: 'website',
     images: [
       {
         url: '/apple-touch-icon.png',
