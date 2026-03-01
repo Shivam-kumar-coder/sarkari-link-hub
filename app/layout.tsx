@@ -36,10 +36,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
-    url: './',
+    url: 'sarkari-link-hub.vercel.app',
     siteName: 'sarkari link hub',
     locale: 'en_US',
-    type: 'website',
+    type: 'Organization',
     images: [
       {
         url: '/apple-touch-icon.png',
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   // Structured Data (Schema)
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "Organization",
     "name": "sarkari link hub",
     "alternateName": ["sarkari link hub", "sarkari link hub 1"],
     "url": "https://sarkari-link-hub.vercel.app"
