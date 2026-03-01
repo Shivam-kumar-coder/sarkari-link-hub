@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   },
   description: 'Find and apply for government services easily. Official guides, documents required, and direct application links for 2000+ services.',
   keywords: ['government services', 'apply for passport', 'drivers license renewal', 'social security benefits', 'business registration', 'voter registration', 'official guides'],
-  authors: [{ name: 'GovPortal Team' }],
-  creator: 'GovPortal',
-  publisher: 'GovPortal',
+  authors: [{ name: 'sks-technologies Team' }],
+  creator: 'sarkari link hub',
+  publisher: 'sarkari link hub',
   // ADDED: Icons property to replace Vercel Logo with your Logo
   icons: {
     icon: '/favicon.ico',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
     url: './',
-    siteName: 'GovPortal', // This helps Google show 'GovPortal' instead of Vercel
+    siteName: 'sarkari link hub', // This helps Google show 'GovPortal' instead of Vercel
     locale: 'en_US',
     type: 'website',
   },
@@ -58,9 +58,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "GovPortal", // Your Site Name
-    "alternateName": ["Gov Portal", "Government Portal"],
-    "url": "https://govportal.example.com" // Update this to your real domain
+    "name": "sarkari link hub", // Your Site Name
+    "alternateName": ["sarkari link hub", "sarkari link hub 1"],
+    "url": "https://sarkari-link-hub.vercel.app" // Update this to your real domain
   };
 
   return (
@@ -97,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <div className="flex items-center gap-2 text-white font-bold text-lg mb-4">
                   <Landmark className="w-6 h-6" />
-                  <span>GovPortal</span>
+                  <span>sarkari link hub</span>
                 </div>
                 <p className="text-sm leading-relaxed">
                   The official directory for all government services. We simplify the process of finding and applying for the services you need.
