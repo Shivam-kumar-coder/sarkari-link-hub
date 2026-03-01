@@ -17,9 +17,13 @@ export const metadata: Metadata = {
   authors: [{ name: 'sks-technologies Team' }],
   creator: 'sarkari link hub',
   publisher: 'sarkari link hub',
-  // ADDED: Icons property to replace Vercel Logo with your Logo
+  // FIXED: Yahan favicon aur apple-touch ke paths ko ensure kiya gaya hai
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   formatDetection: {
@@ -31,14 +35,22 @@ export const metadata: Metadata = {
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
     url: './',
-    siteName: 'sarkari link hub', // This helps Google show 'GovPortal' instead of Vercel
+    siteName: 'sarkari link hub',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/apple-touch-icon.png', // SEO image fallback
+        width: 800,
+        height: 600,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GovPortal - Official Government Services Directory',
     description: 'Find and apply for government services easily. Official guides, documents required, and direct application links.',
+    images: ['/apple-touch-icon.png'],
   },
   robots: {
     index: true,
@@ -54,19 +66,21 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // ADDED: Structured Data (Schema) to strictly tell Google your Site Name
+  // Structured Data (Schema)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "sarkari link hub", // Your Site Name
+    "name": "sarkari link hub",
     "alternateName": ["sarkari link hub", "sarkari link hub 1"],
-    "url": "https://sarkari-link-hub.vercel.app" // Update this to your real domain
+    "url": "https://sarkari-link-hub.vercel.app"
   };
 
   return (
     <html lang="en" className={`${inter.variable}`}>
-      {/* ADDED: Injecting the Schema into the head */}
       <head>
+        {/* Manual Favicon Link for older browsers */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
