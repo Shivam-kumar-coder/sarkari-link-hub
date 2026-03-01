@@ -380,7 +380,7 @@
     "overview": "This service allows you to check the processing status of your Instant e-PAN application submitted via the Income Tax portal. If your e-PAN has been allotted, you can download the e-PAN allotment letter directly from this page using your Aadhaar number or application details.",
     "howToApply": "1. Go to the 'Check / Download e-PAN Status' page. 2. Enter your Aadhaar number or the acknowledgement number from your application. 3. Complete the OTP verification sent to your Aadhaar-linked mobile number. 4. The system will display the current status. 5. If allotted, click on the option to download the e-PAN letter.",
     "documentsRequired": ["Aadhaar Number or Application Acknowledgement Number", "Mobile Number Linked to Aadhaar"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/check-status",
+    "officialUrl": "hhttps://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/checkStatusDownloadEpan",
     "featured": false
   },
   {
@@ -392,7 +392,7 @@
     "overview": "The 'Verify PAN' service allows you to check if a PAN is active and valid. By entering the PAN and other basic details like name and date of birth, you can verify the demographic information on record with the Income Tax Department. This is useful for employers, businesses, or individuals to confirm PAN details.",
     "howToApply": "1. Navigate to the 'Verify PAN Status' page. 2. Enter the PAN you wish to verify. 3. Provide additional details like the full name and date of birth as per PAN records. 4. Enter the Captcha code. 5. Click on 'Submit' to view the verification result.",
     "documentsRequired": ["PAN Number to be Verified"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verify-your-pan",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verifyYourPAN",
     "featured": false
   },
   {
