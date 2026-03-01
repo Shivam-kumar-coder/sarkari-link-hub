@@ -476,7 +476,7 @@
     "overview": "The 'Authenticate Notice/Order' service helps taxpayers confirm if a notice or order they have received (physically or digitally) is genuinely issued by the Income Tax Department. By entering details from the document, you can cross-verify its existence and validity in the official records, protecting against potential fraud.",
     "howToApply": "1. Go to the 'Authenticate Notice/Order' page. 2. You will need details from the notice or order, such as the Document Identification Number (DIN), PAN, and assessment year. 3. Enter these details along with the Captcha code. 4. Click on 'Submit' to authenticate the document. The system will confirm if it is a valid notice issued by the ITD.",
     "documentsRequired": ["Document Identification Number (DIN) from the Notice/Order", "Permanent Account Number (PAN)", "Assessment Year mentioned in the notice"],
-    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/authenticate-notice-order",
+    "officialUrl": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/authenticate-notice-issued-by-itd",
     "featured": false
   }
 ]
