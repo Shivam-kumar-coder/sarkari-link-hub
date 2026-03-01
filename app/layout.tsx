@@ -17,15 +17,15 @@ export const metadata: Metadata = {
   authors: [{ name: 'sks-technologies Team' }],
   creator: 'sarkari link hub',
   publisher: 'sarkari link hub',
-  // Metadata for Icons
+  // Metadata for Icons - Next.js will handle this automatically
   icons: {
     icon: [
-      { url: '/favicon.ico', url: '/favicon.ico' },
-      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.ico?v=1' }, // ?v=1 adds cache-busting to force update
+      { url: '/favicon.ico?v=1', sizes: '32x32', type: 'image/x-icon' },
     ],
-    shortcut: ['/favicon.ico'],
+    shortcut: ['/favicon.ico?v=1'],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png?v=1', sizes: '180x180', type: 'image/png' },
     ],
   },
   formatDetection: {
@@ -80,10 +80,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-        {/* Force browser to find favicon */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Next.js manages metadata, but adding this for legacy browser support */}
+        <link rel="icon" href="/favicon.ico?v=1" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
         
         <script
           type="application/ld+json"
