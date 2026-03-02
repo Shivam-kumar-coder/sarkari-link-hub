@@ -548,7 +548,7 @@
     "overview": "This public service allows users to verify whether a specific taxpayer has filed their GST returns for a given tax period. It provides information on the filing status of major returns like GSTR-3B, GSTR-1, GSTR-5, GSTR-6, and annual returns. This is particularly useful for businesses to check compliance of their suppliers or vendors before claiming input tax credit.",
     "howToApply": "1. Navigate to 'Search Taxpayer Filing Status' page. 2. Enter the taxpayer's GSTIN. 3. Select the financial year and month/quarter for which you want to check filing status. 4. Enter the Captcha code. 5. Click 'Search' to view the status of various returns filed.",
     "documentsRequired": ["GSTIN of taxpayer", "Financial Year", "Tax Period (Month/Quarter)"],
-    "officialUrl": "https://services.gst.gov.in/services/arnstatus",
+    "officialUrl": "https://services.gst.gov.in/services/login",
     "featured": false
   },
   {
@@ -560,7 +560,7 @@
     "overview": "The News and Updates section on the GST portal contains all official communications from the GST Council, Central Board of Indirect Taxes and Customs (CBIC), and state governments. It includes press releases about council meetings, system advisories, important deadlines, procedural changes, and public notices. Taxpayers should regularly check this section to stay compliant with the latest rules and updates.",
     "howToApply": "1. Visit the GST News and Updates page. 2. Browse through the list of recent news items and advisories. 3. Click on any title to read the full announcement or download attached PDFs. 4. Use filters or search to find specific notifications by date or keyword.",
     "documentsRequired": ["No documents required - this is a public information page"],
-    "officialUrl": "https://www.gst.gov.in/newsandupdates/loadmorenews",
+    "officialUrl": "https://www.gst.gov.in/newsandupdates",
     "featured": false
   },
   {
@@ -572,7 +572,7 @@
     "overview": "The Refund Tracking service allows taxpayers to monitor the progress of their refund claims submitted to the GST department. You can track by entering the ARN (Application Reference Number) generated at the time of filing, or search by filing period and GSTIN. The portal shows the current stage of processing, any deficiencies noted, and the final settlement status of the refund.",
     "howToApply": "1. Go to the GST Refund Tracking page. 2. Choose tracking method: by ARN or by filing period. 3. If by ARN, enter your Application Reference Number. 4. If by period, select financial year, month/quarter, and enter GSTIN. 5. Enter Captcha and click 'Search' to view refund status.",
     "documentsRequired": ["Application Reference Number (ARN)", "or GSTIN and filing period details"],
-    "officialUrl": "https://services.gst.gov.in/services/refundtracking",
+    "officialUrl": "https://services.gst.gov.in/services/arnstatus",
     "featured": false
   },
   {
@@ -620,7 +620,7 @@
     "overview": "This direct authentication page provides secure access to the GST taxpayer dashboard. It is functionally similar to the main login page but is specifically the authentication gateway. After successful login, taxpayers can access all services including return filing, viewing ledgers, managing registrations, tracking applications, and responding to notices issued by the department.",
     "howToApply": "1. Visit the GST authentication login page. 2. Enter your Username (GSTIN) and Password. 3. Complete the Captcha verification. 4. Click 'Login' to access your dashboard. 5. For first-time or temporary users, follow the specific login instructions.",
     "documentsRequired": ["GSTIN/Username", "Password", "Mobile for OTP verification (if enabled)"],
-    "officialUrl": "https://services.gst.gov.in/services/auth/login",
+    "officialUrl": "https://services.gst.gov.in/services/login",
     "featured": true
   },
   {
@@ -636,7 +636,7 @@
     "featured": false
   },
   {
-    "id": "58",
+    "id": "56",
     "title": "GST Laws, Acts, and Rules",
     "slug": "gst-laws-acts-rules",
     "category": "GST",
@@ -644,11 +644,11 @@
     "overview": "The GST Law section contains the complete legal framework for Goods and Services Tax in India. It includes the Central GST (CGST) Act, Integrated GST (IGST) Act, Union Territory GST (UTGST) Act, and GST (Compensation to States) Act. Additionally, it provides access to GST rules, regulations, notifications related to legal provisions, and amendments to the acts. This is an essential resource for legal professionals, tax practitioners, and businesses needing to understand compliance requirements.",
     "howToApply": "1. Visit the GST Law page. 2. Browse through the categories: Acts, Rules, Regulations, or Notifications. 3. Click on the document title to view or download the PDF. 4. Use the search function to find specific sections or amendments. 5. Check for updates and new notifications regularly.",
     "documentsRequired": ["No documents required - this is a public legal information page"],
-    "officialUrl": "https://www.gst.gov.in/law",
+    "officialUrl": "https://services.gst.gov.in/services/gstlaw/gstlawlist",
     "featured": true
   },
   {
-    "id": "60",
+    "id": "57",
     "title": "GST e-Way Bill System",
     "slug": "gst-e-way-bill-system",
     "category": "GST",
