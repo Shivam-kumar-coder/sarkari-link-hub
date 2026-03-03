@@ -47,7 +47,13 @@ export default function DirectoryPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showSearchSuggestions, setShowSearchSuggestions] = useState(false);
   const [recentSearches, setRecentSearches] = useState(RECENT_SEARCHES);
+  const [mounted, setMounted] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
+
+  // Handle mounting to prevent hydration issues
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const categories = useMemo(() => {
     const cats = new Set(linksData.map(item => item.category));
@@ -109,9 +115,28 @@ export default function DirectoryPage() {
         setShowSearchSuggestions(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    
+    if (mounted) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    
+    return () => {
+      if (mounted) {
+        document.removeEventListener('mousedown', handleClickOutside);
+      }
+    };
+  }, [mounted]);
+
+  // Don't render until mounted to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-emerald-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <div className="text-center text-white/50">Loading...</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-0">
@@ -148,18 +173,18 @@ export default function DirectoryPage() {
           />
         </div>
 
-        {/* Floating Particles */}
+        {/* Floating Particles - Fixed for SSR */}
         <div className="absolute inset-0 z-0 overflow-hidden">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(10)].map((_, i) => (
             <motion.div
               key={i}
               initial={{ 
-                x: Math.random() * window.innerWidth, 
-                y: Math.random() * window.innerHeight,
+                x: `${Math.random() * 100}%`, 
+                y: `${Math.random() * 100}%`,
                 scale: 0
               }}
               animate={{ 
-                y: [null, -100],
+                y: [null, '-100px'],
                 opacity: [0, 1, 0],
                 scale: [0, 1, 0]
               }}
