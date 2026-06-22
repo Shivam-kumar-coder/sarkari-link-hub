@@ -80,10 +80,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-    
-        {/* Next.js manages metadata, but adding this for legacy browser support */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7216004941452350"
-     crossorigin="anonymous"></script>
+        {/* AdSense verification meta tag – required for ownership verification */}
+        <meta name="google-adsense-account" content="ca-pub-7216004941452350" />
+        
+        {/* AdSense script – loads ads */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7216004941452350"
+          crossOrigin="anonymous"
+        ></script>
+        
+        {/* Legacy browser support */}
         <link rel="icon" href="/favicon.ico?v=1" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
         
