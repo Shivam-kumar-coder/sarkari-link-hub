@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-<meta name="google-adsense-account" content="ca-pub-7216004941452350">
+<meta name="google-adsense-account" content="ca-pub-7216004941452350"> 
       </head>
       <body className="font-sans bg-slate-50 text-slate-900 min-h-screen flex flex-col" suppressHydrationWarning>
         <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
