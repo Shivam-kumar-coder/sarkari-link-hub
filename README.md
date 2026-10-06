@@ -1,16 +1,23 @@
 # Modern Web Application
 
-A modern, responsive web application built with a clean and scalable project structure. The application is designed for a smooth user experience, fast development, and easy deployment.
+A modern and responsive government services directory designed to make it easy for citizens to discover and access important government services in one place. The platform organizes services into categories, provides searchable service information and step-by-step guides, and connects users with official government portals and application links.
 
 ## 🚀 Features
 
-* 📱 Fully responsive and mobile-friendly design
-* ⚡ Fast and smooth application performance
-* 🎨 Clean and modern user interface
-* 🧩 Well-organized and maintainable code structure
-* ⚙️ Simple configuration and setup
-* 🔧 Easy local development
-* 🌐 Ready for production deployment
+- 🔎 Search for government services quickly
+- 📂 Browse services by category
+- 📋 Detailed service guides and information
+- 🔗 Direct access to official government portals
+- 🧾 Find application forms and online services
+- 🪪 Identity and citizen-related services
+- 💼 Employment and business services
+- 💰 Income Tax and GST services
+- 🏥 Health and welfare services
+- 🚗 Driving licence and vehicle-related services
+- 📱 Responsive design for mobile, tablet, and desktop
+- ⚡ Fast and simple user experience
+- ♿ Accessible and easy-to-use interface
+- 🔄 Regularly organized and updated service information
 
 ## 🛠️ Technologies
 
