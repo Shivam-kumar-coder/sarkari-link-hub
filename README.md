@@ -1,20 +1,27 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="Project Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# AI Studio App
 
-This contains everything you need to run your app locally.
+A modern web application built with a clean and scalable architecture for fast development and smooth user experience.
 
-View your app in AI Studio: https://ai.studio/apps/abfc0ef6-d53b-4f3e-bef0-f4178725a807
+## 🚀 Features
 
-## Run Locally
+- Responsive and mobile-friendly interface
+- Fast startup and local development workflow
+- Easy environment configuration
+- Modern front-end app structure
+- Ready for deployment to hosting platforms
 
-**Prerequisites:**  Node.js
+## 📋 Prerequisites
 
+Before running the app, make sure you have:
+- Node.js installed
+- npm or yarn installed
+
+## 🛠️ Run Locally
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
